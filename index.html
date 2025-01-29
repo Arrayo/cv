@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículum - Francisco Caballero Portero</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .language-switch {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 1rem;
+        }
+
+        .flag {
+            cursor: pointer;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            font-weight: bold;
+            user-select: none;
+            color: #333;
+        }
+
+        .flag:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        h2,
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 1.5rem;
+        }
+
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.95rem;
+            margin: 0 auto 1rem auto;
+            justify-content: center;
+        }
+
+        .info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        .list {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .list li {
+            margin: 0.3rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .list {
+                margin-left: 1rem;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+
+            header {
+                border-bottom: 2px solid #333;
+                margin-bottom: 1rem;
+            }
+
+            .language-switch {
+                display: none;
+            }
+        }
+
+        .en {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="language-switch">
+                <span id="flag-es" class="flag">ES</span>
+                <span id="flag-en" class="flag">EN</span>
+            </div>
+            <h1>Francisco Caballero Portero</h1>
+
+            <p class="es"><strong>Desarrollador de Software</strong></p>
+            <p class="en"><strong>Software Developer</strong></p>
+        </header>
+
+        <div class="es">
+            <section class="section info">
+                <div>Email: <a href="mailto:fcp1978@hotmail.com">fcp1978@hotmail.com</a></div>
+                <div>Tel: <a href="tel:+34643660234">+34 643 660 234</a></div>
+                <div><a href="https://youtube.com/c/Yustgo" target="_blank">YouTube: Yustgo</a></div>
+                <div><a href="https://www.udemy.com/" target="_blank">Udemy: Curso Angular, Bootstrap y Node.js</a>
+                </div>
+                <div><a href="https://fcpcv-92355.web.app" target="_blank">Sitio Web Personal</a></div>
+            </section>
+
+            <section class="section">
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Desarrollador de software con amplia experiencia en
+                    <strong>tecnologías web</strong> y <strong>arquitecturas escalables</strong>.
+                    Apasionado por el <strong>código limpio</strong> y con un enfoque orientado
+                    a la <strong>arquitectura hexagonal</strong> y la <strong>mejora continua</strong>.
+                    Destaca su habilidad para trabajar con metodologías ágiles como
+                    <strong>Scrum</strong> y <strong>Scrumban</strong>, así como su experiencia
+                    en la implementación de <strong>microservicios</strong> y entornos en la
+                    <strong>nube (AWS)</strong>. Enfocado en mantener las mejores prácticas
+                    y estar a la vanguardia de <strong>tecnologías emergentes</strong>.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Experiencia Profesional</h2>
+                <h3>Software Developer – SEWAN COMUNICACIONES, S.L (Mar 2021 - Presente)</h3>
+                <ul class="list">
+                    <li>Desarrollo de aplicaciones con <strong>React</strong> y <strong>Node.js</strong>.</li>
+                    <li>Integración de <strong>microservicios</strong> y uso de <strong>arquitectura hexagonal</strong>.
+                    </li>
+                    <li>Diseño y administración de <strong>bases de datos PostgreSQL</strong>.</li>
+                    <li>Implementación de soluciones en <strong>AWS</strong>.</li>
+                    <li>Trabajo en entornos ágiles (Scrum y Scrumban).</li>
+                    <li>Herramientas de colaboración: Jira, Figma y Confluence.</li>
+                </ul>
+
+                <h3>Instructor Online – Udemy (2018 - Presente)</h3>
+                <ul class="list">
+                    <li>Creación de cursos sobre <strong>desarrollo web</strong> (Angular, Bootstrap, Node.js).</li>
+                    <li>Formación de estudiantes en <strong>frontend</strong> y <strong>backend</strong>.</li>
+                    <li>Elaboración y gestión de contenido educativo en plataformas online.</li>
+                </ul>
+
+                <h3>Creador de Contenido – Canal de YouTube "Yustgo" (2018 - Presente)</h3>
+                <ul class="list">
+                    <li>Producción de contenido formativo sobre <strong>Angular</strong> y tecnologías web.</li>
+                    <li>Crecimiento constante de la comunidad de desarrolladores.</li>
+                    <li>Difusión de buenas prácticas y novedades del sector.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Formación Académica</h2>
+                <h3>Certificado de Profesionalidad – Programador de Sistemas Informáticos (2017 - 2018)</h3>
+                <ul class="list">
+                    <li>Desarrollo de software orientado a objetos y componentes.</li>
+                    <li>Administración y supervisión de sistemas operativos (Linux, Cisco).</li>
+                    <li>Experiencia en Java, C, PHP y MySQL.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Certificaciones y Cursos</h2>
+                <h3>Certificaciones Oficiales</h3>
+                <ul class="list">
+                    <li><strong>IFCT170PO: Architecting on Amazon Web Services (2024)</strong> – Diseño y arquitectura
+                        en
+                        AWS, alta disponibilidad y escalabilidad, automatización y desacoplamiento.</li>
+                    <li><strong>IFCT179PO: DevOps on Amazon Web Services (2023)</strong> – Infraestructura como código
+                        (IaC)
+                        y CI/CD en AWS, administración de contenedores, seguridad y pruebas automatizadas.</li>
+                </ul>
+
+                <h3>Cursos Online (Udemy)</h3>
+                <ul class="list">
+                    <li>Angular: De cero a experto (Angular 10+)</li>
+                    <li>Angular Avanzado: MEAN Stack</li>
+                    <li>REDUX en Angular con NGRX</li>
+                    <li>Node.js en producción</li>
+                    <li>Desarrollo con ReactiveX - RxJS</li>
+                    <li>JavaScript y ES6</li>
+                    <li>Ionic, Flutter y Bootstrap</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Habilidades Técnicas</h2>
+                <ul class="list">
+                    <li><strong>Lenguajes:</strong> JavaScript, TypeScript, PHP, Java, C</li>
+                    <li><strong>Frontend:</strong> React, Angular, Bootstrap, HTML5, CSS3</li>
+                    <li><strong>Backend:</strong> Node.js, PHP, Express.js</li>
+                    <li><strong>Bases de Datos:</strong> PostgreSQL, MySQL, MongoDB</li>
+                    <li><strong>DevOps & Cloud:</strong> AWS, Docker, Kubernetes</li>
+                    <li><strong>Metodologías Ágiles:</strong> Scrum, Scrumban, Agile</li>
+                    <li><strong>Herramientas:</strong> Git, GitLab, Jira, Confluence, Figma</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Idiomas</h2>
+                <ul class="list">
+                    <li><strong>Español:</strong> Nativo</li>
+                    <li><strong>Inglés:</strong> Nivel medio</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Objetivo Profesional</h2>
+                <p>
+                    Seguir contribuyendo al desarrollo de soluciones escalables e innovadoras en
+                    el ámbito de la programación y la arquitectura de software, aplicando
+                    metodologías ágiles y las mejores prácticas de <strong>código limpio</strong>.
+                    Comprometido con la excelencia y el aprendizaje continuo para enfrentar
+                    retos tecnológicos y ofrecer valor al usuario final.
+                </p>
+                <p style="font-style: italic; font-size: 0.9rem; margin-top: 1rem;">
+                    Nota: El sitio web actual es de mis inicios y no refleja por completo mi nivel
+                    actual, pero forma parte de mi evolución profesional.
+                </p>
+            </section>
+        </div>
+
+        <div class="en">
+            <section class="section info">
+                <div>Email: <a href="mailto:fcp1978@hotmail.com">fcp1978@hotmail.com</a></div>
+                <div>Phone: <a href="tel:+34643660234">+34 643 660 234</a></div>
+                <div><a href="https://youtube.com/c/Yustgo" target="_blank">YouTube: Yustgo</a></div>
+                <div><a href="https://www.udemy.com/" target="_blank">Udemy: Angular, Bootstrap & Node.js</a></div>
+                <div><a href="https://fcpcv-92355.web.app" target="_blank">Personal Website</a></div>
+            </section>
+
+            <section class="section">
+                <h2>Professional Profile</h2>
+                <p>
+                    Software developer with extensive experience in
+                    <strong>web technologies</strong> and <strong>scalable architectures</strong>.
+                    Passionate about <strong>clean code</strong> and focused on
+                    <strong>hexagonal architecture</strong> and <strong>continuous improvement</strong>.
+                    Skilled in agile methodologies like <strong>Scrum</strong> and <strong>Scrumban</strong>,
+                    with experience implementing <strong>microservices</strong> and
+                    <strong>cloud environments (AWS)</strong>. Dedicated to applying
+                    <strong>best practices</strong> and staying current with
+                    <strong>emerging technologies</strong>.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Professional Experience</h2>
+                <h3>Software Developer – SEWAN COMUNICACIONES, S.L (Mar 2021 - Present)</h3>
+                <ul class="list">
+                    <li>Develop applications with <strong>React</strong> and <strong>Node.js</strong>.</li>
+                    <li>Integrate <strong>microservices</strong> under a <strong>hexagonal architecture</strong>.</li>
+                    <li>Design and administer <strong>PostgreSQL</strong> databases.</li>
+                    <li>Implement solutions in <strong>AWS</strong>.</li>
+                    <li>Work in agile environments (Scrum, Scrumban).</li>
+                    <li>Collaboration tools: Jira, Figma, Confluence.</li>
+                </ul>
+
+                <h3>Online Instructor – Udemy (2018 - Present)</h3>
+                <ul class="list">
+                    <li>Creation of <strong>web development</strong> courses (Angular, Bootstrap, Node.js).</li>
+                    <li>Training students in <strong>frontend</strong> and <strong>backend</strong> skills.</li>
+                    <li>Managing educational content on online platforms.</li>
+                </ul>
+
+                <h3>Content Creator – YouTube Channel "Yustgo" (2018 - Present)</h3>
+                <ul class="list">
+                    <li>Production of educational content about <strong>Angular</strong> and other web technologies.
+                    </li>
+                    <li>Constant growth of a developer community.</li>
+                    <li>Promotion of best practices and industry news.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Academic Background</h2>
+                <h3>Professional Certificate – Software Systems Programmer (2017 - 2018)</h3>
+                <ul class="list">
+                    <li>Object-oriented and component-based software development.</li>
+                    <li>Administration and supervision of operating systems (Linux, Cisco).</li>
+                    <li>Experience with Java, C, PHP, MySQL.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Certifications & Courses</h2>
+                <h3>Official Certifications</h3>
+                <ul class="list">
+                    <li><strong>IFCT170PO: Architecting on AWS (2024)</strong> – AWS design and architecture,
+                        high availability, scalability, automation, and decoupling.</li>
+                    <li><strong>IFCT179PO: DevOps on AWS (2023)</strong> – Infrastructure as code (IaC) and
+                        CI/CD in AWS, container management, security, and automated testing.</li>
+                </ul>
+
+                <h3>Online Courses (Udemy)</h3>
+                <ul class="list">
+                    <li>Angular: From Zero to Expert (Angular 10+)</li>
+                    <li>Advanced Angular: MEAN Stack</li>
+                    <li>REDUX in Angular with NGRX</li>
+                    <li>Node.js in Production</li>
+                    <li>Development with ReactiveX - RxJS</li>
+                    <li>JavaScript and ES6</li>
+                    <li>Ionic, Flutter and Bootstrap</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Technical Skills</h2>
+                <ul class="list">
+                    <li><strong>Languages:</strong> JavaScript, TypeScript, PHP, Java, C</li>
+                    <li><strong>Frontend:</strong> React, Angular, Bootstrap, HTML5, CSS3</li>
+                    <li><strong>Backend:</strong> Node.js, PHP, Express.js</li>
+                    <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</li>
+                    <li><strong>DevOps & Cloud:</strong> AWS, Docker, Kubernetes</li>
+                    <li><strong>Agile Methodologies:</strong> Scrum, Scrumban, Agile</li>
+                    <li><strong>Tools:</strong> Git, GitLab, Jira, Confluence, Figma</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Languages</h2>
+                <ul class="list">
+                    <li><strong>Spanish:</strong> Native</li>
+                    <li><strong>English:</strong> Intermediate level</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Professional Objective</h2>
+                <p>
+                    Continue contributing to the development of scalable and innovative solutions
+                    in the field of programming and software architecture, applying
+                    agile methodologies and <strong>clean code</strong> best practices.
+                    Committed to excellence and continuous learning to face technological challenges
+                    and provide value to the end user.
+                </p>
+                <p style="font-style: italic; font-size: 0.9rem; margin-top: 1rem;">
+                    Note: The current personal website was created in my early days and
+                    does not fully reflect my current skill set, but remains part of my
+                    professional evolution.
+                </p>
+            </section>
+        </div>
+
+        <footer style="text-align:center; margin:2rem 0 1rem 0; font-size:0.85rem; color:#999;">
+            &copy; <span id="year"></span> - Francisco Caballero Portero
+        </footer>
+    </div>
+
+    <script>
+        const esFlag = document.getElementById('flag-es');
+        const enFlag = document.getElementById('flag-en');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            document.querySelectorAll('.es').forEach(e => e.style.display = 'block');
+            document.querySelectorAll('.en').forEach(e => e.style.display = 'none');
+        });
+
+        esFlag.addEventListener('click', () => {
+            document.querySelectorAll('.es').forEach(e => e.style.display = 'block');
+            document.querySelectorAll('.en').forEach(e => e.style.display = 'none');
+        });
+
+        enFlag.addEventListener('click', () => {
+            document.querySelectorAll('.es').forEach(e => e.style.display = 'none');
+            document.querySelectorAll('.en').forEach(e => e.style.display = 'block');
+        });
+    </script>
+</body>
+
+</html>
