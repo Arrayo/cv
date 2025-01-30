@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículum - Francisco Caballero Portero</title>
     <style>
+        /* Color de fondo oscuro global */
         body {
             margin: 0;
-            padding: 0;
+            /* Dejamos algo de espacio arriba y abajo para ver el fondo oscuro */
+            padding: 2rem 0;
             background-color: #333;
             color: #333;
             font-family: Arial, sans-serif;
         }
 
+        /* Contenedor principal con fondo "papel envejecido" y espacio interno */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background-color: #fff;
+            /* Un tono de blanco más "cálido" o envejecido */
+            background-color: #f9f7f3;
             padding: 2rem;
             box-sizing: border-box;
         }
@@ -94,6 +98,7 @@
             margin: 0.3rem 0;
         }
 
+        /* Responsividad */
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -104,9 +109,13 @@
             }
         }
 
+        /* Ajustes para imprimir */
         @media print {
             body {
                 background-color: #fff;
+                /* Fondo blanco al imprimir */
+                padding: 0;
+                /* Quitar el padding para que no haya márgenes oscuros en PDF */
             }
 
             header {
@@ -116,13 +125,16 @@
 
             .language-switch {
                 display: none;
+                /* Ocultar selector al imprimir */
             }
         }
 
+        /* Ocultar versión en inglés por defecto */
         .en {
             display: none;
         }
     </style>
+
 </head>
 
 <body>
@@ -142,8 +154,9 @@
             <section class="section info">
                 <div>Email: <a href="mailto:fcp1978@hotmail.com">fcp1978@hotmail.com</a></div>
                 <div>Tel: <a href="tel:+34643660234">+34 643 660 234</a></div>
-                <div><a href="https://youtube.com/c/Yustgo" target="_blank">YouTube: Yustgo</a></div>
-                <div><a href="https://www.udemy.com/" target="_blank">Udemy: Curso Angular, Bootstrap y Node.js</a>
+                <div><a href="https://www.youtube.com/@yustgo2631" target="_blank">YouTube: Yustgo</a></div>
+                <div><a href="https://www.udemy.com/course/angular-bootstrap-y-nodejs/?kw=angular+bootstrap&src=sac&couponCode=LETSLEARNNOW"
+                        target="_blank">Udemy: Curso Angular, Bootstrap y Node.js</a>
                 </div>
                 <div><a href="https://fcpcv-92355.web.app" target="_blank">Sitio Web Personal</a></div>
             </section>
@@ -266,8 +279,9 @@
             <section class="section info">
                 <div>Email: <a href="mailto:fcp1978@hotmail.com">fcp1978@hotmail.com</a></div>
                 <div>Phone: <a href="tel:+34643660234">+34 643 660 234</a></div>
-                <div><a href="https://youtube.com/c/Yustgo" target="_blank">YouTube: Yustgo</a></div>
-                <div><a href="https://www.udemy.com/" target="_blank">Udemy: Angular, Bootstrap & Node.js</a></div>
+                <div><a href="https://www.youtube.com/@yustgo2631" target="_blank">YouTube: Yustgo</a></div>
+                <div><a href="https://www.udemy.com/course/angular-bootstrap-y-nodejs/?kw=angular+bootstrap&src=sac&couponCode=LETSLEARNNOW"
+                        target="_blank">Udemy: Angular, Bootstrap & Node.js</a></div>
                 <div><a href="https://fcpcv-92355.web.app" target="_blank">Personal Website</a></div>
             </section>
 
