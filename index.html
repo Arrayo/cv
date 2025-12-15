@@ -27,23 +27,30 @@
             padding-bottom: 1rem;
             border-bottom: 2px solid #ddd;
             margin-bottom: 1rem;
-            position: relative;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: .5rem;
         }
 
         .language-switch {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 1rem;
+            display: flex;
+            gap: .5rem;
         }
 
         .flag {
             cursor: pointer;
-            font-size: 1rem;
-            margin-left: .5rem;
+            font-size: .95rem;
             font-weight: bold;
             user-select: none;
             color: #333;
+            background: transparent;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: .35rem .6rem;
         }
 
         .flag:hover {
@@ -129,6 +136,22 @@
             }
         }
 
+        @media (max-width: 520px) {
+            .header-top {
+                justify-content: center;
+                margin-bottom: .75rem;
+            }
+
+            h1 {
+                font-size: 1.55rem;
+            }
+
+            .info {
+                gap: .5rem .9rem;
+            }
+        }
+
+
         @media print {
             body {
                 background: #fff;
@@ -159,9 +182,11 @@
 <body>
     <div class="container">
         <header>
-            <div class="language-switch">
-                <span id="flag-es" class="flag">ES</span>
-                <span id="flag-en" class="flag">EN</span>
+            <div class="header-top">
+                <div class="language-switch" aria-label="Language switch">
+                    <button id="flag-es" class="flag" type="button">ES</button>
+                    <button id="flag-en" class="flag" type="button">EN</button>
+                </div>
             </div>
 
             <h1>Francisco Caballero Portero</h1>
@@ -174,6 +199,7 @@
             <p class="muted es">Bullas (Murcia), España · Remoto</p>
             <p class="muted en">Bullas (Murcia), Spain · Remote</p>
         </header>
+
 
         <!-- ES -->
         <div class="es">
@@ -197,12 +223,14 @@
                 <p>
                     Desarrollador de software con especialización en <strong>frontend</strong>, centrado en la
                     construcción de aplicaciones web modernas, escalables y bien testeadas con <strong>React</strong> y
-                    <strong>GraphQL</strong>. Trabajo con buenas prácticas de <strong>arquitectura (hexagonal/DDD)</strong>,
+                    <strong>GraphQL</strong>. Trabajo con buenas prácticas de <strong>arquitectura
+                        (hexagonal/DDD)</strong>,
                     calidad y mantenibilidad.
                 </p>
                 <p>
                     Integro herramientas de desarrollo asistido por IA en mi flujo de trabajo (por ejemplo,
-                    <strong>Cursor</strong> y agentes de IA) para acelerar implementación, apoyar refactors y reforzar el
+                    <strong>Cursor</strong> y agentes de IA) para acelerar implementación, apoyar refactors y reforzar
+                    el
                     testing, manteniendo siempre criterio técnico y revisión manual.
                 </p>
 
@@ -223,18 +251,23 @@
                 <p class="muted">Producto B2B · Remoto</p>
                 <ul class="list">
                     <li>Desarrollo de frontends con <strong>React</strong> y <strong>GraphQL/Apollo</strong>
-                        (queries, mutations y subscriptions), incluyendo WebSockets para <strong>suscripciones</strong>.</li>
+                        (queries, mutations y subscriptions), incluyendo WebSockets para <strong>suscripciones</strong>.
+                    </li>
                     <li>Gestión de estado con <strong>Pullstate</strong>; formularios con <strong>Formik/Yup</strong> o
-                        <strong>react-hook-form</strong>; i18n con <strong>i18next</strong>.</li>
+                        <strong>react-hook-form</strong>; i18n con <strong>i18next</strong>.
+                    </li>
                     <li>Calidad: <strong>Jest + React Testing Library</strong> y pruebas E2E con
-                        <strong>Cypress</strong>; linting con ESLint/Stylelint y formateo con Prettier.</li>
+                        <strong>Cypress</strong>; linting con ESLint/Stylelint y formateo con Prettier.
+                    </li>
                     <li>Trabajo en <strong>monorepos</strong> con pnpm + Lerna y bundlers modernos (según proyecto),
                         cuidando consistencia y DX.</li>
                     <li>Integración con servicios <strong>Node.js</strong> y ecosistemas de microservicios; colaboración
                         ágil con Jira/Confluence y diseño con Figma.</li>
                     <li>Observabilidad y operación con <strong>Datadog</strong> y <strong>Sentry</strong>; uso de
-                        <strong>Docker</strong> y CI/CD en el ciclo de entrega.</li>
-                    <li>Contribución continua a la mejora de mantenibilidad y calidad del frontend mediante refactors, testing y estandarización en monorepo.</li>
+                        <strong>Docker</strong> y CI/CD en el ciclo de entrega.
+                    </li>
+                    <li>Contribución continua a la mejora de mantenibilidad y calidad del frontend mediante refactors,
+                        testing y estandarización en monorepo.</li>
                 </ul>
 
                 <h3>Instructor online — Udemy (2018 – actualidad)</h3>
@@ -259,7 +292,8 @@
                     <li>Testing con <strong>Jest</strong> y E2E con <strong>Cypress</strong>.</li>
                     <li>Repo: <a href="https://github.com/Arrayo/hexagonal-architecture" target="_blank"
                             rel="noreferrer">github.com/Arrayo/hexagonal-architecture</a></li>
-                    <li>Demo: <a href="https://arrayo.github.io/hexagonal-architecture/" target="_blank" rel="noreferrer">GitHub Pages</a></li>
+                    <li>Demo: <a href="https://arrayo.github.io/hexagonal-architecture/" target="_blank"
+                            rel="noreferrer">GitHub Pages</a></li>
                 </ul>
             </section>
 
@@ -302,7 +336,8 @@
                 <div>Email: <a href="mailto:fcp1978@hotmail.com">fcp1978@hotmail.com</a></div>
                 <div>Phone: <a href="tel:+34643660234">+34 643 660 234</a></div>
 
-                <div><a href="https://www.linkedin.com/in/francisco-caballero-portero-89745534a/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <div><a href="https://www.linkedin.com/in/francisco-caballero-portero-89745534a/" target="_blank"
+                        rel="noreferrer">LinkedIn</a>
                 </div>
                 <div><a href="https://github.com/Arrayo" target="_blank" rel="noreferrer">GitHub</a></div>
 
@@ -344,16 +379,20 @@
                     <li>Frontend development with <strong>React</strong> and <strong>GraphQL/Apollo</strong>
                         (queries, mutations, subscriptions), including WebSockets for subscriptions.</li>
                     <li>State management with <strong>Pullstate</strong>; forms with <strong>Formik/Yup</strong> or
-                        <strong>react-hook-form</strong>; i18n with <strong>i18next</strong>.</li>
+                        <strong>react-hook-form</strong>; i18n with <strong>i18next</strong>.
+                    </li>
                     <li>Quality: <strong>Jest + React Testing Library</strong> and E2E testing with
-                        <strong>Cypress</strong>; linting (ESLint/Stylelint) and formatting (Prettier).</li>
+                        <strong>Cypress</strong>; linting (ESLint/Stylelint) and formatting (Prettier).
+                    </li>
                     <li><strong>Monorepo</strong> work with pnpm + Lerna; modern bundlers depending on the project;
                         focus on consistency and DX.</li>
                     <li>Integration with <strong>Node.js</strong> services and microservice ecosystems; agile
                         collaboration (Jira/Confluence) and design handoff (Figma).</li>
                     <li>Observability and operations with <strong>Datadog</strong> and <strong>Sentry</strong>;
-                        <strong>Docker</strong> and CI/CD in the delivery cycle.</li>
-                    <li>Ongoing contribution to frontend maintainability and quality through refactors, testing, and monorepo standardization.</li>
+                        <strong>Docker</strong> and CI/CD in the delivery cycle.
+                    </li>
+                    <li>Ongoing contribution to frontend maintainability and quality through refactors, testing, and
+                        monorepo standardization.</li>
                 </ul>
 
                 <h3>Online Instructor — Udemy (2018 – Present)</h3>
@@ -377,7 +416,8 @@
                     <li>Testing with <strong>Jest</strong> and E2E with <strong>Cypress</strong>.</li>
                     <li>Repo: <a href="https://github.com/Arrayo/hexagonal-architecture" target="_blank"
                             rel="noreferrer">github.com/Arrayo/hexagonal-architecture</a></li>
-                    <li>Demo: <a href="https://arrayo.github.io/hexagonal-architecture/" target="_blank" rel="noreferrer">GitHub Pages</a></li>
+                    <li>Demo: <a href="https://arrayo.github.io/hexagonal-architecture/" target="_blank"
+                            rel="noreferrer">GitHub Pages</a></li>
                 </ul>
             </section>
 
